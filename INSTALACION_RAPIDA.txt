@@ -1,0 +1,171 @@
+════════════════════════════════════════════════════════════════════
+   LILY AI - GUÍA DE INSTALACIÓN RÁPIDA
+════════════════════════════════════════════════════════════════════
+
+⚡ INSTALACIÓN EN 5 PASOS ⚡
+
+PASO 1: INSTALAR PYTHON
+────────────────────────
+1. Descargar Python 3.11 o superior desde:
+   https://www.python.org/downloads/
+
+2. Durante la instalación:
+   ⚠️ MUY IMPORTANTE: Marcar "Add Python to PATH"
+   
+3. Verificar instalación:
+   Abrir CMD y ejecutar: python --version
+
+
+PASO 2: INSTALAR OLLAMA Y MODELO
+─────────────────────────────────
+1. Descargar Ollama desde:
+   https://ollama.ai/
+
+2. Instalar Ollama
+
+3. Abrir CMD y ejecutar:
+   ollama pull mistral
+
+4. Esperar a que termine la descarga (puede tardar varios minutos)
+
+
+PASO 3: DESCARGAR MODELO VOSK (RECONOCIMIENTO DE VOZ OFFLINE)
+──────────────────────────────────────────────────────────────
+1. Descargar modelo español desde:
+   https://alphacephei.com/vosk/models/vosk-model-small-es-0.42.zip
+   (Tamaño: ~50 MB)
+
+2. Extraer el archivo ZIP
+
+3. Colocar la carpeta extraída en:
+   E:\Bella-main\LILY VIRTUAL\models\vosk-model-small-es-0.42\
+
+4. Verificar que tenga esta estructura:
+   models\
+   └── vosk-model-small-es-0.42\
+       ├── am\
+       ├── conf\
+       ├── graph\
+       └── ivector\
+
+
+PASO 4: INSTALAR DEPENDENCIAS DE PYTHON
+────────────────────────────────────────
+1. Abrir CMD en la carpeta del proyecto
+
+2. Ejecutar:
+   pip install -r requirements.txt
+
+   Esto instalará:
+   - fastapi, uvicorn (servidor web)
+   - pydantic (validación)
+   - gtts, pydub (texto a voz)
+   - textblob (análisis emocional)
+   - vosk (reconocimiento de voz offline)
+   - pyaudio (captura de micrófono)
+   - pyautogui (control de medios)
+   - chromadb (base de datos vectorial)
+   - Y más...
+
+
+PASO 5: EJECUTAR LILY
+─────────────────────
+1. Hacer doble clic en:
+   INICIAR_LILY.bat
+
+2. Microsoft Edge se abrirá automáticamente
+
+3. ¡Listo! Ya puedes chatear con Lily
+
+
+════════════════════════════════════════════════════════════════════
+   FUNCIONALIDADES PRINCIPALES
+════════════════════════════════════════════════════════════════════
+
+🎤 RECONOCIMIENTO DE VOZ (VOSK)
+───────────────────────────────
+- Di "LILY" para activarla (wake word)
+- Funciona 100% offline (sin internet)
+- Conversaciones de voz en tiempo real
+- Total privacidad
+
+
+🎵 CONTROL DE YOUTUBE Y MEDIOS
+───────────────────────────────
+Comandos de voz disponibles:
+- "Pon música de [artista]" → Reproduce en YouTube
+- "Pausa" → Pausa/Reanuda
+- "Siguiente" → Siguiente video
+- "Anterior" → Video anterior
+- "Sube volumen" → Aumenta volumen
+- "Baja volumen" → Reduce volumen
+- "Silencio" → Silencia/Desilencia
+
+
+💬 CHAT DE TEXTO
+────────────────
+- Escribe cualquier mensaje
+- Lily responde con texto y voz
+- Inteligencia emocional activa
+- Memoria de conversaciones
+
+
+════════════════════════════════════════════════════════════════════
+   SOLUCIÓN RÁPIDA DE PROBLEMAS
+════════════════════════════════════════════════════════════════════
+
+❌ "Python no está instalado"
+→ Reinstalar Python marcando "Add Python to PATH"
+
+❌ "Ollama no está conectado"
+→ Abrir CMD y ejecutar: ollama serve
+
+❌ "Modelo Vosk no encontrado"
+→ Verificar que esté en: models\vosk-model-small-es-0.42\
+→ Descargar desde: https://alphacephei.com/vosk/models
+
+❌ "Wake word no funciona"
+→ Verificar que pyaudio esté instalado: pip show pyaudio
+→ Verificar que el modelo Vosk esté en la ubicación correcta
+→ Hablar más alto o acercarse al micrófono
+
+❌ "Error al instalar dependencias"
+→ Ejecutar CMD como administrador
+→ Ejecutar: pip install --upgrade pip
+→ Intentar de nuevo: pip install -r requirements.txt
+
+❌ "El navegador no se abre"
+→ Abrir Microsoft Edge manualmente
+→ Navegar a: http://127.0.0.1:8000
+
+
+════════════════════════════════════════════════════════════════════
+   VERIFICAR QUE TODO FUNCIONA
+════════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST:
+□ Python instalado y en PATH
+□ Ollama corriendo (ollama serve)
+□ Modelo Mistral descargado (ollama list)
+□ Modelo Vosk en la carpeta correcta
+□ Dependencias instaladas (pip list)
+□ INICIAR_LILY.bat ejecutándose
+□ Edge abierto en http://127.0.0.1:8000
+□ Wake word "LILY" detectándose
+□ Comandos de medios funcionando
+
+
+════════════════════════════════════════════════════════════════════
+   DOCUMENTACIÓN COMPLETA
+════════════════════════════════════════════════════════════════════
+
+Para más información, consulta:
+- README.md → Guía completa del usuario
+- CARACTERISTICAS_IMPLEMENTADAS.md → Lista técnica de características
+- CONTROL_MEDIA.md → Guía de control de YouTube y medios
+- Que es lily.txt → Descripción general de Lily
+
+
+════════════════════════════════════════════════════════════════════
+   ¡DISFRUTA DE LILY! 💕
+════════════════════════════════════════════════════════════════════

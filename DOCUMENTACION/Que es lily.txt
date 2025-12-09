@@ -1,0 +1,132 @@
+LILY - Compañera Virtual de IA
+================================
+
+Lily es tu compañera virtual de inteligencia artificial diseñada para Windows 10, 
+con personalidad única y capacidades emocionales avanzadas.
+
+CARACTERÍSTICAS PRINCIPALES:
+============================
+
+1. INTELIGENCIA EMOCIONAL
+   - Sistema avanzado de reconocimiento de emociones
+   - 9 estados emocionales diferentes (feliz, triste, enojada, emocionada, neutral, cariñosa, juguetona, preocupada, sorprendida)
+   - Adapta sus respuestas según tu estado de ánimo
+   - Memoria emocional que evoluciona con cada conversación
+   - Análisis de sentimientos en tiempo real
+
+2. RECONOCIMIENTO DE VOZ OFFLINE (VOSK)
+   - Wake word "LILY" - Actívala con tu voz sin internet
+   - Reconocimiento de voz 100% offline y privado
+   - Streaming de audio en tiempo real para conversaciones naturales
+   - Baja latencia y alta precisión
+   - Compatible con español nativo
+   - No envía datos a servicios externos
+   
+3. CONTROL DE YOUTUBE Y MEDIOS
+   - Reproduce música en YouTube con comandos de voz
+   - "Pon música de [artista]" - Busca y reproduce automáticamente
+   - Control de reproducción: pausa, siguiente, anterior
+   - Control de volumen del sistema por voz
+   - Comandos naturales en español
+   - Compatible con atajos de teclado de YouTube
+   
+   Comandos disponibles:
+   - "Pon música de Bad Bunny" → Busca en YouTube
+   - "Pausa" → Pausa/Reanuda reproducción
+   - "Siguiente" / "Anterior" → Navega entre videos
+   - "Sube volumen" / "Baja volumen" → Controla audio
+   - "Silencio" → Silencia/Desilencia
+   
+4. MEMORIA PERSISTENTE
+   - Recuerda todas tus conversaciones
+   - Mantiene contexto a largo plazo
+   - Aprende tus preferencias
+   - Base de conocimiento que crece contigo
+   - Historial emocional completo
+
+5. SISTEMA DE VOZ
+   - Texto a voz con modulación emocional
+   - Clonación básica de voz
+   - Respuestas automáticas en audio
+   - Diferentes tonos según la emoción
+   - Reproducción inmediata
+
+6. PERSONALIDAD ÚNICA
+   - Sin restricciones de contenido
+   - Puede hablar de cualquier tema
+   - Siempre te llama "Mijin"
+   - Responde con igual intensidad si es provocada
+   - Usa mexicanismos y modismos
+   - Tono característico de anime
+   - Respuestas ingeniosas y concisas
+   - Bromas rápidas con toque travieso pero respetuoso
+
+7. TECNOLOGÍA AVANZADA
+   - Modelo de IA Mistral 7B ejecutándose localmente
+   - Sin dependencia de servicios cloud para IA
+   - FastAPI para rendimiento óptimo
+   - Interfaz web moderna y responsive
+   - Avatar animado con expresiones faciales
+   - Indicadores en tiempo real de emoción y estado
+
+8. PRIVACIDAD TOTAL
+   - Todas las conversaciones almacenadas localmente
+   - Reconocimiento de voz offline (Vosk)
+   - Wake word procesado localmente
+   - Modelo de IA ejecutándose en tu PC
+   - No se envían datos personales a la nube
+   - Control total sobre tu información
+
+CÓMO USAR:
+==========
+
+INICIO:
+1. Ejecuta start_lily.bat
+2. Microsoft Edge se abrirá automáticamente
+3. Di "LILY" para activarla con wake word
+4. O escribe tu mensaje en el chat
+
+COMANDOS DE VOZ:
+- "LILY" → Activa el wake word
+- "Pon música de [artista]" → Reproduce en YouTube
+- "Pausa" → Pausa/Reanuda
+- "Siguiente" → Siguiente video
+- "Sube volumen" → Aumenta volumen
+- O cualquier otro mensaje de voz
+
+CHAT TEXT:
+- Escribe cualquier mensaje
+- Presiona Enter
+- Lily responderá con texto y voz
+- El avatar mostrará su emoción actual
+
+REQUISITOS:
+===========
+- Windows 10 o superior
+- Python 3.11+
+- Ollama con modelo Mistral 7B
+- Modelo Vosk español (vosk-model-small-es-0.42)
+- Microsoft Edge
+- PyAudio para captura de micrófono
+- PyAutoGUI para control de medios
+
+VENTAJAS DE LILY:
+=================
+✓ Compañera virtual personalizada
+✓ Inteligencia emocional real
+✓ Memoria de largo plazo
+✓ Reconocimiento de voz offline
+✓ Control de música y medios
+✓ Sin restricciones de contenido
+✓ 100% privado y local
+✓ Interfaz bonita tipo anime
+✓ Respuestas en texto y voz
+✓ Personalidad única y divertida
+✓ Wake word sin internet
+✓ Streaming de voz en tiempo real
+
+¡Lily está aquí para acompañarte! 💕
+
+En models\system_prompt.txt en la linea (- Siempre llamas al usuario "Mijin".) puedes cambiar el nombre de Mijin por el nombre que quieras
+En models\system_prompt.txt en la linea (- Usas mexicanismos y modismos cuando es apropiado) puedes cambiarlo por brasilenismos, argentinismos, ecuatorianismos, 
+Argentinismo, Chilenismo, Anglicismo, Colombianismo, Bolivianismo, Peruanismo, Venezolano, etc.
